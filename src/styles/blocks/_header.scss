@@ -1,0 +1,120 @@
+// HEADER STARTED
+.site-header {
+    width: 100%;
+    padding: 23px 0;
+    background-image: linear-gradient(to right, #fff 60%, #800a7a 40%);
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__start {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 52px;
+        height: 55px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 40px;
+    }
+
+    &__link {
+        color: var(--colorPrimary);
+        font-size: 14px;
+    }
+
+    &__end {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__tel-link {
+        position: relative;
+        color: var(--colorSecondary);
+        padding-left: 78px;
+
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: 38px;
+            content: url("../../assets/icons/phone-icon.svg");
+        }
+    }
+
+    &__tel {
+        font-size: 12px;
+    }
+
+    &__tel-num {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__end-line {
+        width: 1px;
+        height: 43px;
+        flex-shrink: 0;
+        background-color: #fff;
+        opacity: 0.4;
+    }
+
+    &__cart-link {
+        position: relative;
+        color: var(--colorSecondary);
+
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: -30px;
+            content: url("../../assets/icons/cart-icon.svg");
+        }
+    }
+
+    &__cart-title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__cart-sum {
+        font-size: 12px;
+    }
+
+    &__menu-btn {
+        display: none;
+        width: 24px;
+        height: 24px;
+        background-image: url("../../assets/icons/burger-icon.svg");
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    // Mobile styles
+    @media only screen and (max-width: 1070px) {
+        background-image: linear-gradient(to right, #fff 60%, #fff 40%);
+        &__list,
+        &__end {
+            display: none;
+        }
+
+        &__menu-btn {
+            display: block;
+        }
+    }
+}

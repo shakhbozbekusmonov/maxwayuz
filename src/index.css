@@ -1,0 +1,12 @@
+/* ROOT */
+:root {
+    /* colors */
+    --colorPrimary: #222124;
+    --colorSecondary: #fff;
+    --colorPizza: #e76a06;
+    --colorKombo: #fc96f7;
+    /* background */
+    --backgroundPrimary: #fff;
+    --backgroundSecondary: #800a7a;
+    --elementBackground: #f1b301;
+}
